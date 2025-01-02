@@ -54,8 +54,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/servicos/muque" className="text-gray-400 hover:text-white transition">
-                  Muque
+                <Link href="/servicos/munck" className="text-gray-400 hover:text-white transition">
+                  Munck
                 </Link>
               </li>
               <li>

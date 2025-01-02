@@ -217,12 +217,12 @@ export default function Home() {
                 className="lg:w-1/2 space-y-6"
                 animation="slideFromLeft"
               >
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Muque</h3>
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Munck</h3>
                 <p className="text-white/70 text-lg">
                   Serviço especializado para movimentar e transportar cargas pesadas e equipamentos, atendendo às demandas de quem lida com materiais de grande porte.
                 </p>
-                <AnimatedButton href="/servicos/muque" variant="secondary">
-                  Solicitar muque
+                <AnimatedButton href="/servicos/munck" variant="secondary">
+                  Solicitar munck
                 </AnimatedButton>
               </AnimatedSection>
               <AnimatedSection 
@@ -230,10 +230,10 @@ export default function Home() {
                 animation="slideFromRight"
               >
                 <Image 
-                  src="https://esambiental.com.br/wp-content/uploads/2021/10/munk.jpg" 
-                  alt="Serviço de Muque"
+                  src="/images/services/img-munck.png" 
+                  alt="Serviço de Munck"
                   fill
-                  className="object-cover rounded-2xl shadow-xl"
+                  className="object-cover rounded-2xl"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </AnimatedSection>

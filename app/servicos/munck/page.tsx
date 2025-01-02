@@ -1,10 +1,21 @@
+'use client'
+
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import AnimatedSection from '../../components/AnimatedSection'
+import AnimatedButton from '../../components/AnimatedButton'
 
-export default function Muque() {
-  const beneficios = [
+interface Beneficio {
+  icon: React.ReactNode
+  titulo: string
+  descricao: string
+}
+
+export default function Munck() {
+  const beneficios: Beneficio[] = [
     {
       icon: (
         <svg className="w-8 h-8 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -49,31 +60,24 @@ export default function Muque() {
                 <span>/</span>
                 <Link href="#" className="hover:text-[#1E4C9A]">Serviços</Link>
                 <span>/</span>
-                <span className="text-[#1E4C9A]">Muque</span>
+                <span className="text-[#1E4C9A]">Munck</span>
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-                Serviço de Muque
-                <span className="text-[#1E4C9A] block">Profissional</span>
+                Serviço de <span className="text-[#1E4C9A]">Munck</span>
               </h1>
               <p className="text-gray-600 text-lg">
                 Movimentação de cargas pesadas com segurança e eficiência. Nossa equipe especializada e equipamentos modernos garantem a melhor solução para suas necessidades.
               </p>
-              <Link 
-                href="/contato" 
-                className="bg-[#1E4C9A] text-white hover:text-white px-8 py-4 rounded-full flex items-center gap-2 shadow-lg hover:shadow-xl transition duration-300 text-lg w-fit"
-              >
+              <AnimatedButton href="/contato" variant="primary">
                 Solicitar Orçamento
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
+              </AnimatedButton>
             </div>
             <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[500px]">
               <Image 
-                src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=2340&h=1316&fit=crop" 
-                alt="Serviço de Muque" 
+                src="/images/services/img-munck.png" 
+                alt="Serviço de Munck" 
                 fill
-                className="object-cover rounded-2xl shadow-2xl"
+                className="object-cover rounded-2xl"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
@@ -109,15 +113,9 @@ export default function Muque() {
             Entre em contato conosco e solicite um orçamento para seu serviço.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            <Link 
-              href="/contato" 
-              className="bg-white text-[#1E4C9A] px-8 py-4 rounded-full hover:shadow-lg transition duration-300 font-medium inline-flex items-center gap-2"
-            >
+            <AnimatedButton href="/contato" variant="secondary">
               Solicitar Orçamento
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
+            </AnimatedButton>
             <div className="text-lg">
               ou ligue para <span className="font-bold">(11) 9999-9999</span>
             </div>
