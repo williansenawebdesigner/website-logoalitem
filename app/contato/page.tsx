@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Contato() {
   const depoimentos = [
@@ -49,10 +50,10 @@ export default function Contato() {
             <span>/</span>
             <span className="text-[#1E4C9A]">Contato</span>
           </div>
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4 text-center md:text-left">
             Fale Conosco
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl">
+          <p className="text-lg text-gray-600 max-w-2xl text-center md:text-left mx-auto md:mx-0">
             Estamos aqui para ajudar. Entre em contato conosco e descubra como podemos tornar sua jornada mais segura e eficiente.
           </p>
         </div>
@@ -63,8 +64,8 @@ export default function Contato() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-16">
             {/* Formulário */}
-            <div className="lg:w-2/3 bg-white rounded-2xl shadow-xl p-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Envie sua mensagem</h2>
+            <div className="lg:w-2/3 bg-white rounded-2xl shadow-xl p-6 md:p-8">
+              <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Envie sua mensagem</h2>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -111,8 +112,8 @@ export default function Contato() {
 
             {/* Informações de contato */}
             <div className="lg:w-1/3 space-y-8">
-              <div className="bg-[#1E4C9A] text-white p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold mb-6 text-white">Informações de Contato</h3>
+              <div className="bg-[#1E4C9A] text-white p-6 md:p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold mb-6 text-white text-center md:text-left">Informações de Contato</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <svg className="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -145,9 +146,9 @@ export default function Contato() {
                 </div>
               </div>
 
-              <div className="bg-[#EEF5FF] p-8 rounded-2xl">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Horário de Atendimento</h3>
-                <div className="space-y-2 text-gray-600">
+              <div className="bg-[#EEF5FF] p-6 md:p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center md:text-left">Horário de Atendimento</h3>
+                <div className="space-y-2 text-gray-600 text-center md:text-left">
                   <p>Segunda a Sexta: 8h às 18h</p>
                   <p>Sábado: 9h às 13h</p>
                   <p className="font-medium text-[#1E4C9A]">Suporte 24h disponível para emergências</p>
@@ -164,8 +165,8 @@ export default function Contato() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {estatisticas.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-bold mb-2">{stat.numero}</div>
-                <div className="text-white/80">{stat.texto}</div>
+                <div className="text-3xl md:text-4xl font-bold mb-2">{stat.numero}</div>
+                <div className="text-white/80 text-sm md:text-base">{stat.texto}</div>
               </div>
             ))}
           </div>
@@ -180,8 +181,8 @@ export default function Contato() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {depoimentos.map((depoimento, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg">
-                <div className="flex items-center gap-4 mb-4">
+              <div key={index} className="bg-white p-6 md:p-8 rounded-2xl shadow-lg">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-4 mb-4">
                   <Image
                     src={depoimento.imagem}
                     alt={depoimento.nome}
@@ -189,12 +190,12 @@ export default function Contato() {
                     height={56}
                     className="rounded-full"
                   />
-                  <div>
+                  <div className="text-center md:text-left">
                     <div className="font-bold text-gray-800">{depoimento.nome}</div>
                     <div className="text-gray-600">{depoimento.cargo}</div>
                   </div>
                 </div>
-                <p className="text-gray-600">{depoimento.texto}</p>
+                <p className="text-gray-600 text-center md:text-left">{depoimento.texto}</p>
               </div>
             ))}
           </div>
@@ -212,7 +213,7 @@ export default function Contato() {
           </p>
           <Link
             href="#"
-            className="inline-flex items-center gap-2 bg-[#1E4C9A] text-white px-8 py-4 rounded-full hover:bg-[#1a4185] transition duration-300"
+            className="inline-flex items-center justify-center gap-2 bg-[#1E4C9A] text-white px-8 py-4 rounded-full hover:bg-[#1a4185] transition duration-300 w-full md:w-auto"
           >
             Comece Agora
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -221,6 +222,8 @@ export default function Contato() {
           </Link>
         </div>
       </section>
+
+      <Footer />
     </main>
   )
 } 

@@ -27,8 +27,18 @@ html {
 
 /* Melhorias de acessibilidade */
 :focus {
-  outline: 2px solid #1E4C9A;
-  outline-offset: 2px;
+  outline: none;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(30, 76, 154, 0.4);
+  border-radius: 4px;
+}
+
+/* Remove outline para elementos clicáveis */
+a:focus, button:focus {
+  outline: none;
 }
 
 /* Animações suaves */
