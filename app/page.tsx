@@ -131,7 +131,7 @@ export default function Home() {
             animation="slideFromLeft"
           >
             <Image 
-              src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2340&h=1316&fit=crop" 
+              src="/images/services/img-sobre.png" 
               alt="Nossa História" 
               fill
               className="object-cover rounded-2xl shadow-xl"

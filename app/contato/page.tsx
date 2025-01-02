@@ -121,7 +121,7 @@ export default function Contato() {
                     </svg>
                     <div>
                       <div className="font-medium">Telefone</div>
-                      <div className="text-white/80">(11) 9999-9999</div>
+                      <div className="text-white/80">(31) 99204-9301</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -140,7 +140,11 @@ export default function Contato() {
                     </svg>
                     <div>
                       <div className="font-medium">Localização</div>
-                      <div className="text-white/80">São Paulo, SP</div>
+                      <div className="text-white/80">
+                        Rodovia Presidente Juscelino Kubitschek<br />
+                        Esmeraldas - MG<br />
+                        35740-000
+                      </div>
                     </div>
                   </div>
                 </div>
