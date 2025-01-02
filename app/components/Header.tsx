@@ -19,12 +19,22 @@ export default function Header() {
         </div>
         <nav className="hidden md:flex gap-8">
           <Link href="/" className="text-gray-700 hover:text-[#1E4C9A] transition">Início</Link>
-          <Link href="#" className="text-gray-700 hover:text-[#1E4C9A] transition">Soluções</Link>
-          <Link href="#" className="text-gray-700 hover:text-[#1E4C9A] transition">Sobre nós</Link>
+          <Link
+            href="/#servicos"
+            className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
+          >
+            Soluções
+          </Link>
+          <Link 
+            href="/#sobre" 
+            className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
+          >
+            Sobre nós
+          </Link>
           <Link href="/contato" className="text-gray-700 hover:text-[#1E4C9A] transition">Contato</Link>
         </nav>
         <Link 
-          href="/login" 
+          href="https://www.logoalitem.com.br/user/login" 
           className="bg-[#1E4C9A] text-white px-6 py-2.5 rounded-full hover:bg-[#1a4185] hover:text-white transition duration-300 shadow-lg hover:shadow-xl"
         >
           Login

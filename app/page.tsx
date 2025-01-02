@@ -67,12 +67,15 @@ export default function Home() {
                 Tudo o que você precisa em um só lugar: desde cálculo de frete e assessoria jurídica até reboques e parcerias que garantam mais eficiência e segurança.
               </p>
               <div className="flex items-center gap-8 pt-4">
-                <button className="bg-[#1E4C9A] text-white px-8 py-4 rounded-full flex items-center gap-2 shadow-lg hover:shadow-xl transition duration-300 text-lg">
+                <Link 
+                  href="#servicos" 
+                  className="bg-[#1E4C9A] text-white px-8 py-4 rounded-full flex items-center gap-2 shadow-lg hover:shadow-xl hover:bg-[#1a4185] hover:text-white transition duration-300 text-lg"
+                >
                   Nossos Serviços
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </button>
+                </Link>
                 <div className="flex items-center gap-8">
                   <div className="flex -space-x-7">
                     <Image src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?q=80&w=100&h=100&fit=crop" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
@@ -95,7 +98,7 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 lg:p-6 rounded-xl shadow-lg">
+              <div className="absolute -bottom-6 -left-2 bg-white p-4 lg:p-6 rounded-xl shadow-lg">
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 lg:w-12 lg:h-12 bg-[#EEF5FF] rounded-full flex items-center justify-center">
                     <svg className="w-5 h-5 lg:w-6 lg:h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* Quem Somos */}
-      <section className="container mx-auto px-4 py-20">
+      <section id="sobre" className="container mx-auto px-4 py-20">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
             <Image 
@@ -124,7 +127,7 @@ export default function Home() {
               className="object-cover rounded-2xl shadow-xl"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute -bottom-8 -right-8 bg-[#1E4C9A] text-white p-4 lg:p-6 rounded-xl shadow-lg">
+            <div className="absolute -bottom-8 -right-2 bg-[#1E4C9A] text-white p-4 lg:p-6 rounded-xl shadow-lg">
               <div className="text-2xl lg:text-3xl font-bold">2010</div>
               <div className="text-sm">Ano de Fundação</div>
             </div>
@@ -147,7 +150,7 @@ export default function Home() {
       </section>
 
       {/* Nossos serviços */}
-      <section className="bg-[#1E4C9A] text-white py-20">
+      <section id="servicos" className="bg-[#1E4C9A] text-white py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl lg:text-4xl font-bold text-center mb-4 text-gray-100">
             Tudo em só lugar<br />
@@ -164,16 +167,19 @@ export default function Home() {
                 <p className="text-white/70 text-lg">
                   Atendimento rápido e seguro para resolver emergências na estrada, garantindo que você e seu veículo estejam protegidos em qualquer situação.
                 </p>
-                <button className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg transition duration-300">
+                <Link 
+                  href="/servicos/reboque"
+                  className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg hover:bg-[#f8f9fa] transition duration-300 w-fit"
+                >
                   Solicitar reboque
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </button>
+                </Link>
               </div>
               <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
                 <Image 
-                  src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2340&h=1316&fit=crop" 
+                  src="/images/services/img-reboque.webp" 
                   alt="Serviço de Reboque"
                   fill
                   className="object-cover rounded-2xl shadow-xl"
@@ -188,12 +194,15 @@ export default function Home() {
                 <p className="text-white/70 text-lg">
                   Serviço especializado para movimentar e transportar cargas pesadas e equipamentos, atendendo às demandas de quem lida com materiais de grande porte.
                 </p>
-                <button className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg transition duration-300">
+                <Link 
+                  href="/servicos/muque"
+                  className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg hover:bg-[#f8f9fa] transition duration-300 w-fit"
+                >
                   Solicitar muque
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </button>
+                </Link>
               </div>
               <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
                 <Image 
@@ -212,12 +221,15 @@ export default function Home() {
                 <p className="text-white/70 text-lg">
                   Ferramentas que ajudam a calcular custos, facilitando o planejamento financeiro e garantindo mais controle nas suas operações.
                 </p>
-                <button className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg transition duration-300">
+                <Link 
+                  href="/servicos/calculo-frete"
+                  className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg hover:bg-[#f8f9fa] transition duration-300 w-fit"
+                >
                   Calcular agora
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </button>
+                </Link>
               </div>
               <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
                 <Image 
@@ -236,12 +248,15 @@ export default function Home() {
                 <p className="text-white/70 text-lg">
                   Suporte completo para motoristas em questões legais, oferecendo segurança e orientação em casos relacionados ao transporte e aos seus direitos.
                 </p>
-                <button className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg transition duration-300">
+                <Link 
+                  href="/servicos/assessoria-juridica"
+                  className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg hover:bg-[#f8f9fa] transition duration-300 w-fit"
+                >
                   Consultar assessoria
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </button>
+                </Link>
               </div>
               <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
                 <Image 
