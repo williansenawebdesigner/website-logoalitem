@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Header from './components/Header'
 
 export default function Home() {
   const praticidadeItems = [
@@ -48,27 +49,8 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="absolute top-0 left-0 right-0 z-50">
-        <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-          <div className="w-42">
-            <Image src="/images/hero/logoalitem-logofundoclaro.svg" alt="Logo Ali Tem" width={292} height={30} priority className="w-auto h-8" />
-          </div>
-          <nav className="hidden md:flex gap-8">
-            <Link href="#" className="text-gray-700 hover:text-[#1E4C9A] transition">Início</Link>
-            <Link href="#" className="text-gray-700 hover:text-[#1E4C9A] transition">Soluções</Link>
-            <Link href="#" className="text-gray-700 hover:text-[#1E4C9A] transition">Sobre nós</Link>
-            <Link href="/contato" className="text-gray-700 hover:text-[#1E4C9A] transition">Contato</Link>
-          </nav>
-          <Link 
-            href="/login" 
-            className="bg-[#1E4C9A] text-white px-6 py-2.5 rounded-full hover:bg-[#1a4185] hover:text-white transition duration-300 shadow-lg hover:shadow-xl"
-          >
-            Login
-          </Link>
-        </div>
-      </header>
-
+      <Header />
+      
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF]"></div>

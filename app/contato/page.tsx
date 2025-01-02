@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Header from '../components/Header'
 
 export default function Contato() {
   const depoimentos = [
@@ -37,9 +38,11 @@ export default function Contato() {
   ]
 
   return (
-    <main className="min-h-screen bg-white pt-24">
+    <main className="min-h-screen bg-white">
+      <Header />
+      
       {/* Header com breadcrumb */}
-      <div className="bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF] py-12">
+      <div className="bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF] py-12 pt-32">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-2 text-sm text-gray-600 mb-4">
             <Link href="/" className="hover:text-[#1E4C9A]">Início</Link>
@@ -109,7 +112,7 @@ export default function Contato() {
             {/* Informações de contato */}
             <div className="lg:w-1/3 space-y-8">
               <div className="bg-[#1E4C9A] text-white p-8 rounded-2xl">
-                <h3 className="text-xl font-bold mb-6">Informações de Contato</h3>
+                <h3 className="text-2xl font-bold mb-6 text-white">Informações de Contato</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <svg className="w-6 h-6 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
