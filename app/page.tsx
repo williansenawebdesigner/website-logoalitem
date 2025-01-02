@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import AnimatedSection from './components/AnimatedSection'
+import AnimatedButton from './components/AnimatedButton'
 
 export default function Home() {
   const praticidadeItems = [
@@ -57,7 +59,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF]"></div>
         <div className="container mx-auto px-4 relative">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2 space-y-6">
+            <AnimatedSection 
+              className="lg:w-1/2 space-y-6"
+              animation="slideFromLeft"
+            >
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
                 Simplificando a
                 <span className="text-[#1E4C9A] block">Vida do Transportador</span>
@@ -67,29 +72,28 @@ export default function Home() {
                 Tudo o que você precisa em um só lugar: desde cálculo de frete e assessoria jurídica até reboques e parcerias que garantam mais eficiência e segurança.
               </p>
               <div className="flex items-center gap-8 pt-4">
-                <Link 
-                  href="#servicos" 
-                  className="bg-[#1E4C9A] text-white px-8 py-4 rounded-full flex items-center gap-2 shadow-lg hover:shadow-xl hover:bg-[#1a4185] hover:text-white transition duration-300 text-lg"
-                >
+                <AnimatedButton href="#servicos" variant="primary">
                   Nossos Serviços
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-                <div className="flex items-center gap-8">
-                  <div className="flex -space-x-7">
-                    <Image src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?q=80&w=100&h=100&fit=crop" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
-                    <Image src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?q=80&w=100&h=100&fit=crop" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
-                    <Image src="https://images.unsplash.com/photo-1536766820879-059fec98ec0a?q=80&w=100&h=100&fit=crop" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
+                </AnimatedButton>
+                <AnimatedSection animation="fadeIn">
+                  <div className="flex items-center gap-8">
+                    <div className="flex -space-x-7">
+                      <Image src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?q=80&w=100&h=100&fit=crop" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
+                      <Image src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?q=80&w=100&h=100&fit=crop" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
+                      <Image src="https://images.unsplash.com/photo-1536766820879-059fec98ec0a?q=80&w=100&h=100&fit=crop" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
+                    </div>
+                    <div className="text-left">
+                      <div className="font-bold text-[#1E4C9A]">13+</div>
+                      <div className="text-sm text-gray-600 leading-4">Anos de Experiência</div>
+                    </div>
                   </div>
-                  <div className="text-left">
-                    <div className="font-bold text-[#1E4C9A]">13+</div>
-                    <div className="text-sm text-gray-600 leading-4">Anos de Experiência</div>
-                  </div>
-                </div>
+                </AnimatedSection>
               </div>
-            </div>
-            <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[500px]">
+            </AnimatedSection>
+            <AnimatedSection 
+              className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[500px]"
+              animation="slideFromRight"
+            >
               <Image 
                 src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2340&h=2340&fit=crop" 
                 alt="Transporte de Carga" 
@@ -98,7 +102,10 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
-              <div className="absolute -bottom-6 -left-2 bg-white p-4 lg:p-6 rounded-xl shadow-lg">
+              <AnimatedSection 
+                className="absolute -bottom-6 -left-2 bg-white p-4 lg:p-6 rounded-xl shadow-lg"
+                animation="fadeInUp"
+              >
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 lg:w-12 lg:h-12 bg-[#EEF5FF] rounded-full flex items-center justify-center">
                     <svg className="w-5 h-5 lg:w-6 lg:h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -110,8 +117,8 @@ export default function Home() {
                     <div className="text-sm text-gray-600">Sempre ao seu lado</div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </AnimatedSection>
+            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -119,7 +126,10 @@ export default function Home() {
       {/* Quem Somos */}
       <section id="sobre" className="container mx-auto px-4 py-20">
         <div className="flex flex-col lg:flex-row items-center gap-16">
-          <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
+          <AnimatedSection 
+            className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]"
+            animation="slideFromLeft"
+          >
             <Image 
               src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=2340&h=1316&fit=crop" 
               alt="Nossa História" 
@@ -127,12 +137,18 @@ export default function Home() {
               className="object-cover rounded-2xl shadow-xl"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute -bottom-8 -right-2 bg-[#1E4C9A] text-white p-4 lg:p-6 rounded-xl shadow-lg">
+            <AnimatedSection 
+              className="absolute -bottom-8 -right-2 bg-[#1E4C9A] text-white p-4 lg:p-6 rounded-xl shadow-lg"
+              animation="fadeInUp"
+            >
               <div className="text-2xl lg:text-3xl font-bold">2010</div>
               <div className="text-sm">Ano de Fundação</div>
-            </div>
-          </div>
-          <div className="lg:w-1/2 space-y-6">
+            </AnimatedSection>
+          </AnimatedSection>
+          <AnimatedSection 
+            className="lg:w-1/2 space-y-6"
+            animation="slideFromRight"
+          >
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">Quem somos</h2>
             <div className="space-y-4">
               <p className="text-gray-600 text-lg">
@@ -145,39 +161,44 @@ export default function Home() {
                 Hoje, somos muito mais do que uma empresa: somos parceiros dos motoristas, prontos para atender desde pequenas demandas até operações complexas de transporte, sempre com foco na eficiência, segurança e facilidade.
               </p>
             </div>
-          </div>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* Nossos serviços */}
       <section id="servicos" className="bg-[#1E4C9A] text-white py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl lg:text-4xl font-bold text-center mb-4 text-gray-100">
-            Tudo em só lugar<br />
-            para te atender!
-          </h2>
-          <p className="text-center mb-16 text-white/70 max-w-3xl mx-auto text-lg">
-            Na Logo Ali Tem, oferecemos uma gama de serviços pensados para facilitar a vida dos motoristas e garantir o melhor suporte possível.
-          </p>
+          <AnimatedSection animation="fadeInUp">
+            <h2 className="text-4xl lg:text-4xl font-bold text-center mb-4 text-gray-100">
+              Tudo em só lugar<br />
+              para te atender!
+            </h2>
+            <p className="text-center mb-16 text-white/70 max-w-3xl mx-auto text-lg">
+              Na Logo Ali Tem, oferecemos uma gama de serviços pensados para facilitar a vida dos motoristas e garantir o melhor suporte possível.
+            </p>
+          </AnimatedSection>
           
           <div className="space-y-20">
-            <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
-              <div className="lg:w-1/2 space-y-6">
+            <AnimatedSection 
+              className="flex flex-col-reverse lg:flex-row items-center gap-12"
+              animation="slideFromLeft"
+            >
+              <AnimatedSection 
+                className="lg:w-1/2 space-y-6"
+                animation="slideFromLeft"
+              >
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Reboque 24h</h3>
                 <p className="text-white/70 text-lg">
                   Atendimento rápido e seguro para resolver emergências na estrada, garantindo que você e seu veículo estejam protegidos em qualquer situação.
                 </p>
-                <Link 
-                  href="/servicos/reboque"
-                  className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg hover:bg-[#f8f9fa] transition duration-300 w-fit"
-                >
+                <AnimatedButton href="/servicos/reboque" variant="secondary">
                   Solicitar reboque
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
-              <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
+                </AnimatedButton>
+              </AnimatedSection>
+              <AnimatedSection 
+                className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]"
+                animation="slideFromRight"
+              >
                 <Image 
                   src="/images/services/img-reboque.webp" 
                   alt="Serviço de Reboque"
@@ -185,26 +206,29 @@ export default function Home() {
                   className="object-cover rounded-2xl shadow-xl"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-              </div>
-            </div>
+              </AnimatedSection>
+            </AnimatedSection>
 
-            <div className="flex flex-col-reverse lg:flex-row-reverse items-center gap-12">
-              <div className="lg:w-1/2 space-y-6">
+            <AnimatedSection 
+              className="flex flex-col-reverse lg:flex-row-reverse items-center gap-12"
+              animation="slideFromLeft"
+            >
+              <AnimatedSection 
+                className="lg:w-1/2 space-y-6"
+                animation="slideFromLeft"
+              >
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Muque</h3>
                 <p className="text-white/70 text-lg">
                   Serviço especializado para movimentar e transportar cargas pesadas e equipamentos, atendendo às demandas de quem lida com materiais de grande porte.
                 </p>
-                <Link 
-                  href="/servicos/muque"
-                  className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg hover:bg-[#f8f9fa] transition duration-300 w-fit"
-                >
+                <AnimatedButton href="/servicos/muque" variant="secondary">
                   Solicitar muque
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
-              <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
+                </AnimatedButton>
+              </AnimatedSection>
+              <AnimatedSection 
+                className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]"
+                animation="slideFromRight"
+              >
                 <Image 
                   src="https://esambiental.com.br/wp-content/uploads/2021/10/munk.jpg" 
                   alt="Serviço de Muque"
@@ -212,26 +236,29 @@ export default function Home() {
                   className="object-cover rounded-2xl shadow-xl"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-              </div>
-            </div>
+              </AnimatedSection>
+            </AnimatedSection>
 
-            <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
-              <div className="lg:w-1/2 space-y-6">
+            <AnimatedSection 
+              className="flex flex-col-reverse lg:flex-row items-center gap-12"
+              animation="slideFromLeft"
+            >
+              <AnimatedSection 
+                className="lg:w-1/2 space-y-6"
+                animation="slideFromLeft"
+              >
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Assessoria Jurídica</h3>
                 <p className="text-white/70 text-lg">
                   Suporte completo para motoristas em questões legais, oferecendo segurança e orientação em casos relacionados ao transporte e aos seus direitos.
                 </p>
-                <Link 
-                  href="/servicos/assessoria-juridica"
-                  className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg hover:bg-[#f8f9fa] transition duration-300 w-fit"
-                >
+                <AnimatedButton href="/servicos/assessoria-juridica" variant="secondary">
                   Consultar assessoria
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
-              <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
+                </AnimatedButton>
+              </AnimatedSection>
+              <AnimatedSection 
+                className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]"
+                animation="slideFromRight"
+              >
                 <Image 
                   src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&h=1316&fit=crop" 
                   alt="Assessoria Jurídica"
@@ -239,8 +266,8 @@ export default function Home() {
                   className="object-cover rounded-2xl shadow-xl"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-              </div>
-            </div>
+              </AnimatedSection>
+            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -248,17 +275,20 @@ export default function Home() {
       {/* Cálculo de Estadia e Frete */}
       <section className="py-20 bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF]">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-4xl font-bold mb-4 text-gray-800">
+          <AnimatedSection animation="fadeInUp">
+            <h2 className="text-4xl lg:text-4xl font-bold mb-4 text-gray-800 text-center">
               Cálculo de Estadia e Frete
             </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg text-center mb-16">
               Ferramenta gratuita para calcular valores de frete e estadia de acordo com a legislação vigente. Tenha controle total dos seus custos e garanta uma remuneração justa.
             </p>
-          </div>
+          </AnimatedSection>
           
           <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2 space-y-6">
+            <AnimatedSection 
+              className="lg:w-1/2 space-y-6"
+              animation="slideFromLeft"
+            >
               <div className="bg-white p-8 rounded-2xl shadow-lg">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">Recursos da Ferramenta</h3>
                 <ul className="space-y-4">
@@ -288,19 +318,16 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className="mt-8">
-                  <Link 
-                    href="https://www.logoalitem.com.br/calcula-estadia/"
-                    className="bg-[#1E4C9A] text-white px-8 py-4 rounded-full flex items-center gap-2 hover:shadow-lg hover:bg-[#1a4185] hover:text-white transition duration-300 w-fit"
-                  >
+                  <AnimatedButton href="https://www.logoalitem.com.br/calcula-estadia/" variant="primary">
                     Calcular agora
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </Link>
+                  </AnimatedButton>
                 </div>
               </div>
-            </div>
-            <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
+            </AnimatedSection>
+            <AnimatedSection 
+              className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]"
+              animation="slideFromRight"
+            >
               <Image 
                 src="/images/services/mockup-calculo-frete.png" 
                 alt="Cálculo de Frete"
@@ -308,7 +335,7 @@ export default function Home() {
                 className="object-contain"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-            </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>

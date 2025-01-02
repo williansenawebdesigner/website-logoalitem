@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import AnimatedButton from './AnimatedButton'
 
 export default function Header() {
   return (
@@ -33,12 +34,29 @@ export default function Header() {
           </Link>
           <Link href="/contato" className="text-gray-700 hover:text-[#1E4C9A] transition">Contato</Link>
         </nav>
-        <Link 
+        <AnimatedButton 
           href="https://www.logoalitem.com.br/user/login" 
-          className="bg-[#1E4C9A] text-white px-6 py-2.5 rounded-full hover:bg-[#1a4185] hover:text-white transition duration-300 shadow-lg hover:shadow-xl"
+          variant="primary"
+          className="text-sm py-2.5 px-6"
+          showArrow={false}
         >
-          Login
-        </Link>
+          <div className="flex items-center gap-2">
+            <svg 
+              className="w-4 h-4" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" 
+              />
+            </svg>
+            <span>Login</span>
+          </div>
+        </AnimatedButton>
       </div>
     </header>
   )
