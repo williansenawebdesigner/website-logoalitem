@@ -20,7 +20,7 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-4">Links Rápidos</h3>
+            <h3 className="text-white/70 text-lg font-bold mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-gray-400 hover:text-white transition">
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Serviços</h3>
+            <h3 className="text-white/70 text-lg font-bold mb-4">Serviços</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/servicos/reboque" className="text-gray-400 hover:text-white transition">
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Contato</h3>
+            <h3 className="text-white/70 text-lg font-bold mb-4">Contato</h3>
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

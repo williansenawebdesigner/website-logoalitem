@@ -60,7 +60,7 @@ export default function Muque() {
               </p>
               <Link 
                 href="/contato" 
-                className="bg-[#1E4C9A] text-white px-8 py-4 rounded-full flex items-center gap-2 shadow-lg hover:shadow-xl transition duration-300 text-lg w-fit"
+                className="bg-[#1E4C9A] text-white hover:text-white px-8 py-4 rounded-full flex items-center gap-2 shadow-lg hover:shadow-xl transition duration-300 text-lg w-fit"
               >
                 Solicitar Orçamento
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -102,7 +102,7 @@ export default function Muque() {
       {/* CTA */}
       <section className="py-16 bg-[#1E4C9A] text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-white text-3xl font-bold mb-4">
             Precisa movimentar cargas pesadas?
           </h2>
           <p className="text-white/80 mb-8 max-w-2xl mx-auto text-lg">

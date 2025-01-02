@@ -161,7 +161,7 @@ export default function Home() {
           </p>
           
           <div className="space-y-20">
-            <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
               <div className="lg:w-1/2 space-y-6">
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Reboque 24h</h3>
                 <p className="text-white/70 text-lg">
@@ -188,7 +188,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
+            <div className="flex flex-col-reverse lg:flex-row-reverse items-center gap-12">
               <div className="lg:w-1/2 space-y-6">
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Muque</h3>
                 <p className="text-white/70 text-lg">
@@ -206,7 +206,7 @@ export default function Home() {
               </div>
               <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
                 <Image 
-                  src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=2340&h=1316&fit=crop" 
+                  src="https://esambiental.com.br/wp-content/uploads/2021/10/munk.jpg" 
                   alt="Serviço de Muque"
                   fill
                   className="object-cover rounded-2xl shadow-xl"
@@ -215,34 +215,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row items-center gap-12">
-              <div className="lg:w-1/2 space-y-6">
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Cálculo de Estadia e Frete</h3>
-                <p className="text-white/70 text-lg">
-                  Ferramentas que ajudam a calcular custos, facilitando o planejamento financeiro e garantindo mais controle nas suas operações.
-                </p>
-                <Link 
-                  href="/servicos/calculo-frete"
-                  className="bg-white text-[#1E4C9A] px-8 py-3 rounded-full flex items-center gap-2 hover:shadow-lg hover:bg-[#f8f9fa] transition duration-300 w-fit"
-                >
-                  Calcular agora
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </div>
-              <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
-                <Image 
-                  src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2340&h=1316&fit=crop" 
-                  alt="Cálculo de Frete"
-                  fill
-                  className="object-cover rounded-2xl shadow-xl"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
               <div className="lg:w-1/2 space-y-6">
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Assessoria Jurídica</h3>
                 <p className="text-white/70 text-lg">
@@ -267,6 +240,74 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cálculo de Estadia e Frete */}
+      <section className="py-20 bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF]">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-4xl font-bold mb-4 text-gray-800">
+              Cálculo de Estadia e Frete
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">
+              Ferramenta gratuita para calcular valores de frete e estadia de acordo com a legislação vigente. Tenha controle total dos seus custos e garanta uma remuneração justa.
+            </p>
+          </div>
+          
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
+            <div className="lg:w-1/2 space-y-6">
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Recursos da Ferramenta</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-center gap-3 text-gray-600">
+                    <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Cálculo de frete por km rodado</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-600">
+                    <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Estadia conforme legislação</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-600">
+                    <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Custos operacionais</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-gray-600">
+                    <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Relatórios detalhados</span>
+                  </li>
+                </ul>
+                <div className="mt-8">
+                  <Link 
+                    href="https://www.logoalitem.com.br/calcula-estadia/"
+                    className="bg-[#1E4C9A] text-white px-8 py-4 rounded-full flex items-center gap-2 hover:shadow-lg hover:bg-[#1a4185] hover:text-white transition duration-300 w-fit"
+                  >
+                    Calcular agora
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]">
+              <Image 
+                src="/images/services/mockup-calculo-frete.png" 
+                alt="Cálculo de Frete"
+                fill
+                className="object-contain"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>

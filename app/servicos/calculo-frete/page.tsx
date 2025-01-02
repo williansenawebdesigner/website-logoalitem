@@ -113,8 +113,8 @@ export default function CalculoFrete() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 space-y-6">
-              <h2 className="text-3xl font-bold">Recursos da Ferramenta</h2>
-              <p className="text-white/80 text-lg">
+              <h2 className="text-3xl font-bold text-white">Recursos da Ferramenta</h2>
+              <p className="text-white/60 text-lg">
                 Nossa calculadora oferece todos os recursos necessários para você ter o controle total dos seus custos e garantir uma remuneração justa pelo seu trabalho.
               </p>
               <ul className="space-y-4">
@@ -157,8 +157,8 @@ export default function CalculoFrete() {
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <Link 
-              href="/sistema" 
-              className="bg-[#1E4C9A] text-white px-8 py-4 rounded-full hover:shadow-lg transition duration-300 font-medium inline-flex items-center gap-2"
+              href="https://www.logoalitem.com.br/user/login"
+              className="bg-[#1E4C9A] text-white hover:text-white px-8 py-4 rounded-full hover:shadow-lg transition duration-300 font-medium inline-flex items-center gap-2"
             >
               Acessar Sistema
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

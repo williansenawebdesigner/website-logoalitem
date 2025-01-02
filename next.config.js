@@ -3,7 +3,9 @@ const nextConfig = {
   images: {
     domains: [
       'source.unsplash.com',
-      'images.unsplash.com'
+      'images.unsplash.com',
+      'logoalitem.com.br',
+      'esambiental.com.br'
     ],
   },
 }

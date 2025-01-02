@@ -113,14 +113,14 @@ export default function AssessoriaJuridica() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 space-y-6">
-              <h2 className="text-3xl font-bold">Nossos Serviços</h2>
-              <p className="text-white/80 text-lg">
+              <h2 className="text-white text-3xl font-bold">Nossos Serviços</h2>
+              <p className="text-white/60 text-lg">
                 Oferecemos uma ampla gama de serviços jurídicos especializados para atender todas as necessidades do setor de transportes.
               </p>
               <ul className="space-y-4">
                 {servicos.map((servico, index) => (
                   <li key={index} className="flex items-center gap-3">
-                    <svg className="w-6 h-6 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     <span>{servico}</span>
@@ -158,7 +158,7 @@ export default function AssessoriaJuridica() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <Link 
               href="/contato" 
-              className="bg-[#1E4C9A] text-white px-8 py-4 rounded-full hover:shadow-lg transition duration-300 font-medium inline-flex items-center gap-2"
+              className="bg-[#1E4C9A] text-white hover:text-white px-8 py-4 rounded-full hover:shadow-lg transition duration-300 font-medium inline-flex items-center gap-2"
             >
               Agendar Consulta
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
