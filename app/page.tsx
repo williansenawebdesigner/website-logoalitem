@@ -1,55 +1,10 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import AnimatedSection from './components/AnimatedSection'
 import AnimatedButton from './components/AnimatedButton'
 
 export default function Home() {
-  const praticidadeItems = [
-    {
-      icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-        </svg>
-      ),
-      title: 'Compromisso com as pessoas',
-      description: 'Atendemos às necessidades do transportador com ética, respeito e compreensão.'
-    },
-    {
-      icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
-          <path d="m9 12 2 2 4-4"/>
-        </svg>
-      ),
-      title: 'Qualidade no serviço',
-      description: 'Garantimos que nossos serviços sejam prestados com excelência, valorizando o esforço de quem trabalha na estrada.'
-    },
-    {
-      icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-          <circle cx="9" cy="7" r="4"/>
-          <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-        </svg>
-      ),
-      title: 'Parcerias confiáveis',
-      description: 'Trabalhamos com colaboradores, sócios e investidores que compartilhem nossos valores e propósitos.'
-    },
-    {
-      icon: (
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
-          <path d="M12 6v8"/>
-          <path d="M12 18h.01"/>
-        </svg>
-      ),
-      title: 'Transparência',
-      description: 'Comunicamos com clareza nossas decisões, atividades e resultados, sejam eles positivos ou negativos.'
-    }
-  ]
-
   return (
     <main className="min-h-screen bg-white">
       <Header />
