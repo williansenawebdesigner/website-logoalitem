@@ -117,7 +117,7 @@ export default function Munck() {
               Solicitar Orçamento
             </AnimatedButton>
             <div className="text-lg">
-              ou ligue para <span className="font-bold">(31) 99204-9301</span>
+              ou ligue para <a href="tel:(31)99204-9301" className="font-bold hover:text-white/80 transition">(31) 99204-9301</a>
             </div>
           </div>
         </div>

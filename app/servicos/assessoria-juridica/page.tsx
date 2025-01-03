@@ -79,7 +79,7 @@ export default function AssessoriaJuridica() {
             </div>
             <div className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[500px]">
               <Image 
-                src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&h=1316&fit=crop" 
+                src="/images/services/img-acessoria.png" 
                 alt="Assessoria Jurídica" 
                 fill
                 className="object-cover rounded-2xl shadow-2xl"

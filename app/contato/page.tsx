@@ -121,7 +121,9 @@ export default function Contato() {
                     </svg>
                     <div>
                       <div className="font-medium">Telefone</div>
-                      <div className="text-white/80">(31) 99204-9301</div>
+                      <div className="text-white/80">
+                        <a href="tel:(31)99204-9301" className="hover:text-white transition">(31) 99204-9301</a>
+                      </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">

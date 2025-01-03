@@ -1,7 +1,16 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 export default function Footer() {
+  const [year, setYear] = useState(new Date().getFullYear())
+
+  useEffect(() => {
+    setYear(new Date().getFullYear())
+  }, [])
+
   return (
     <footer className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-4">
@@ -78,7 +87,7 @@ export default function Footer() {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                (31) 99204-9301
+                <a href="tel:(31)99204-9301" className="hover:text-white transition">(31) 99204-9301</a>
               </li>
               <li className="flex items-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -102,7 +111,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Logo Ali Tem. Todos os direitos reservados.</p>
+          <p>&copy; {year} Logo Ali Tem. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

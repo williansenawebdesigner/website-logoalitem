@@ -76,11 +76,11 @@ export default function Home() {
                   Nossos Serviços
                 </AnimatedButton>
                 <AnimatedSection animation="fadeIn">
-                  <div className="flex items-center gap-8">
+                  <div className="flex items-center gap-8 sm:gap-2">
                     <div className="flex -space-x-7">
-                      <Image src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?q=80&w=100&h=100&fit=crop" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
-                      <Image src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?q=80&w=100&h=100&fit=crop" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
-                      <Image src="https://images.unsplash.com/photo-1536766820879-059fec98ec0a?q=80&w=100&h=100&fit=crop" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
+                      <Image src="/images/hero/avatar-1.jpg" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
+                      <Image src="/images/hero/avatar-2.jpg" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
+                      <Image src="/images/hero/avatar-3.jpg" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
                     </div>
                     <div className="text-left">
                       <div className="font-bold text-[#1E4C9A]">13+</div>
@@ -95,7 +95,7 @@ export default function Home() {
               animation="slideFromRight"
             >
               <Image 
-                src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2340&h=2340&fit=crop" 
+                src="/images/hero/img-hero.png" 
                 alt="Transporte de Carga" 
                 fill
                 className="object-cover rounded-2xl shadow-2xl"
@@ -260,7 +260,7 @@ export default function Home() {
                 animation="slideFromRight"
               >
                 <Image 
-                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2340&h=1316&fit=crop" 
+                  src="/images/services/img-acessoria.png"
                   alt="Assessoria Jurídica"
                   fill
                   className="object-cover rounded-2xl shadow-xl"
