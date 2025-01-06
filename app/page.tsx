@@ -18,7 +18,7 @@ export default function Home() {
               className="lg:w-1/2 space-y-6"
               animation="slideFromLeft"
             >
-              <h1 className="text-[2.7rem] lg:text-[3.5rem] font-bold text-gray-800 leading-tight">
+              <h1 className="text-[2.4rem] lg:text-[2.8rem] font-bold text-gray-800 leading-tight">
                 SIMPLIFICANDO A <span className="text-[#1E4C9A] block">VIDA DO TRANSPORTADOR</span>
                 EM CADA JORNADA.
               </h1>
