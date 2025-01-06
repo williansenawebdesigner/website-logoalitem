@@ -32,9 +32,33 @@ export default function Home() {
                 <AnimatedSection animation="fadeIn">
                   <div className="flex items-center gap-8 sm:gap-2">
                     <div className="flex -space-x-7">
-                      <Image src="/images/hero/avatar-1.jpg" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
-                      <Image src="/images/hero/avatar-2.jpg" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
-                      <Image src="/images/hero/avatar-3.jpg" alt="Motorista" width={48} height={48} className="rounded-full border-2 border-white" />
+                      <Image 
+                        src="/images/hero/avatar-1.jpg" 
+                        alt="Motorista" 
+                        width={48} 
+                        height={48} 
+                        className="rounded-full border-2 border-white"
+                        loading="eager"
+                        quality={75}
+                      />
+                      <Image 
+                        src="/images/hero/avatar-2.jpg" 
+                        alt="Motorista" 
+                        width={48} 
+                        height={48} 
+                        className="rounded-full border-2 border-white"
+                        loading="eager"
+                        quality={75}
+                      />
+                      <Image 
+                        src="/images/hero/avatar-3.jpg" 
+                        alt="Motorista" 
+                        width={48} 
+                        height={48} 
+                        className="rounded-full border-2 border-white"
+                        loading="eager"
+                        quality={75}
+                      />
                     </div>
                     <div className="text-left">
                       <div className="font-bold text-[#1E4C9A]">13+</div>
@@ -45,16 +69,18 @@ export default function Home() {
               </div>
             </AnimatedSection>
             <AnimatedSection 
-              className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[500px]"
+              className="lg:w-1/2 relative"
               animation="slideFromRight"
             >
               <Image 
-                src="/images/hero/img-hero.png" 
-                alt="Transporte de Carga" 
-                fill
+                src="/images/hero/img-hero.png"
+                alt="Transporte de Carga"
+                width={750}
+                height={500}
                 className="object-cover rounded-2xl shadow-2xl"
-                sizes="(max-width: 768px) 100vw, 50vw"
                 priority
+                quality={75}
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               <AnimatedSection 
                 className="absolute -bottom-6 -left-2 bg-white p-4 lg:p-6 rounded-xl shadow-lg"
