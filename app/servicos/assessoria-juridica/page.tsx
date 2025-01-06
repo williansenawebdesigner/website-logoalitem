@@ -1,7 +1,10 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import WhatsAppButton from '../../components/WhatsAppButton'
 
 export default function AssessoriaJuridica() {
   const beneficios = [
@@ -176,6 +179,11 @@ export default function AssessoriaJuridica() {
       </section>
 
       <Footer />
+      
+      <WhatsAppButton 
+        phoneNumber="5531991372290"
+        message="Olá! Gostaria de mais informações sobre os serviços de assessoria jurídica da Logo Ali Tem."
+      />
     </main>
   )
 } 
