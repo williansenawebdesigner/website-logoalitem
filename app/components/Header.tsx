@@ -29,25 +29,25 @@ export default function Header() {
             Reboques
           </Link>
           <Link 
-            href="/#reboques" 
+            href="/#munck" 
             className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
           >
             Munck
           </Link>
           <Link 
-            href="/#munck" 
+            href="/#acessoria" 
             className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
           >
             Assessoria Jurídica
           </Link>
           <Link 
-            href="/#reboques" 
+            href="/#calculo" 
             className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
           >
             Calculo de Frete
           </Link>
           <Link 
-            href="/#reboques" 
+            href="/#sobre" 
             className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
           >
             Sobre nós

@@ -175,7 +175,7 @@ export default function Home() {
                 className="lg:w-1/2 space-y-6"
                 animation="slideFromLeft"
               >
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Munck</h3>
+                <h3 id="munck" className="text-2xl lg:text-3xl font-bold text-gray-100">Munck</h3>
                 <p className="text-white/70 text-lg">
                 Serviço especializado no transporte e movimentação de cargas pesadas e equipamentos, atendendo às necessidades de quem lida com materiais de grande porte. 
                 </p>
@@ -205,7 +205,7 @@ export default function Home() {
                 className="lg:w-1/2 space-y-6"
                 animation="slideFromLeft"
               >
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Assessoria Jurídica</h3>
+                <h3 id="acessoria" className="text-2xl lg:text-3xl font-bold text-gray-100">Assessoria Jurídica</h3>
                 <p className="text-white/70 text-lg">
                 Juridica: Suporte jurídico completo para motoristas, garantindo segurança e orientação em questões relacionadas ao transporte e aos seus direitos.                </p>
                 <AnimatedButton href="/servicos/assessoria-juridica" variant="secondary">
@@ -230,7 +230,7 @@ export default function Home() {
       </section>
 
       {/* Cálculo de Estadia e Frete */}
-      <section className="py-20 bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF]">
+      <section id="calculo" className="py-20 bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF]">
         <div className="container mx-auto px-4">
           <AnimatedSection animation="fadeInUp">
             <h2 className="text-4xl lg:text-4xl font-bold mb-4 text-gray-800 text-center">
