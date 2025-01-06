@@ -20,16 +20,34 @@ export default function Header() {
             />
           </Link>
         </div>
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex gap-6">
           <Link href="/" className="text-gray-700 hover:text-[#1E4C9A] transition">Início</Link>
           <Link
             href="/#servicos"
             className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
           >
-            Soluções
+            Reboques
           </Link>
           <Link 
-            href="/#sobre" 
+            href="/#reboques" 
+            className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
+          >
+            Munck
+          </Link>
+          <Link 
+            href="/#munck" 
+            className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
+          >
+            Assessoria Jurídica
+          </Link>
+          <Link 
+            href="/#reboques" 
+            className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
+          >
+            Calculo de Frete
+          </Link>
+          <Link 
+            href="/#reboques" 
             className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
           >
             Sobre nós

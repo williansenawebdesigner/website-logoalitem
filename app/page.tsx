@@ -18,10 +18,9 @@ export default function Home() {
               className="lg:w-1/2 space-y-6"
               animation="slideFromLeft"
             >
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-                Simplificando a
-                <span className="text-[#1E4C9A] block">Vida do Transportador</span>
-                em cada jornada.
+              <h1 className="text-[2.7rem] lg:text-[3.5rem] font-bold text-gray-800 leading-tight">
+                SIMPLIFICANDO A <span className="text-[#1E4C9A] block">VIDA DO TRANSPORTADOR</span>
+                EM CADA JOURNA.
               </h1>
               <p className="text-gray-600 text-lg max-w-xl">
                 Tudo o que você precisa em um só lugar: desde cálculo de frete e assessoria jurídica até reboques e parcerias que garantam mais eficiência e segurança.
@@ -124,13 +123,18 @@ export default function Home() {
       <section id="servicos" className="bg-[#1E4C9A] text-white py-20">
         <div className="container mx-auto px-4">
           <AnimatedSection animation="fadeInUp">
-            <h2 className="text-4xl lg:text-4xl font-bold text-center mb-4 text-gray-100">
-              Tudo em só lugar<br />
-              para te atender!
+            <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6 p-12 bg-white/90 mt-08 mb-20 lg:my-15 rounded-2xl shadow-lg">
+            <h2 className="text-4xl lg:text-6xl font-bold text-left mb-4 text-black">
+            Apoio completo para quem está sempre em movimento!
             </h2>
-            <p className="text-center mb-16 text-white/70 max-w-3xl mx-auto text-lg">
-              Na Logo Ali Tem, oferecemos uma gama de serviços pensados para facilitar a vida dos motoristas e garantir o melhor suporte possível.
-            </p>
+            <span className="text-left text-black/70 max-w-2xl mx-auto text-lx">
+              <p>
+              Na Logo Ali Tem, cada serviço é pensado para cuidar de você e do seu trajeto, garantindo tranquilidade e suporte em qualquer caminho.
+              </p>
+              <br></br>
+              <span className="text-black font-bold text-[1.2rem]">Nossos serviços:</span>
+            </span>
+            </div>
           </AnimatedSection>
           
           <div className="space-y-20">
@@ -144,8 +148,7 @@ export default function Home() {
               >
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Reboque 24h</h3>
                 <p className="text-white/70 text-lg">
-                  Atendimento rápido e seguro para resolver emergências na estrada, garantindo que você e seu veículo estejam protegidos em qualquer situação.
-                </p>
+                Atendimento ágil e eficiente para emergências na estrada, garantindo que você e seu veículo estejam sempre protegidos, não importa a situação.                </p>
                 <AnimatedButton href="/servicos/reboque" variant="secondary">
                   Solicitar reboque
                 </AnimatedButton>
@@ -174,7 +177,7 @@ export default function Home() {
               >
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Munck</h3>
                 <p className="text-white/70 text-lg">
-                  Serviço especializado para movimentar e transportar cargas pesadas e equipamentos, atendendo às demandas de quem lida com materiais de grande porte.
+                Serviço especializado no transporte e movimentação de cargas pesadas e equipamentos, atendendo às necessidades de quem lida com materiais de grande porte. 
                 </p>
                 <AnimatedButton href="/servicos/munck" variant="secondary">
                   Solicitar munck
@@ -204,8 +207,7 @@ export default function Home() {
               >
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Assessoria Jurídica</h3>
                 <p className="text-white/70 text-lg">
-                  Suporte completo para motoristas em questões legais, oferecendo segurança e orientação em casos relacionados ao transporte e aos seus direitos.
-                </p>
+                Juridica: Suporte jurídico completo para motoristas, garantindo segurança e orientação em questões relacionadas ao transporte e aos seus direitos.                </p>
                 <AnimatedButton href="/servicos/assessoria-juridica" variant="secondary">
                   Consultar assessoria
                 </AnimatedButton>
