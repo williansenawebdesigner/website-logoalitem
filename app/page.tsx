@@ -19,8 +19,8 @@ export default function Home() {
               animation="slideFromLeft"
             >
               <h1 className="text-[2.4rem] lg:text-[2.8rem] font-bold text-gray-800 leading-tight">
-                SIMPLIFICANDO A <span className="text-[#1E4C9A] block">VIDA DO TRANSPORTADOR</span>
-                EM CADA JORNADA.
+                <span className="inline-block">SIMPLIFICANDO A</span> <span className="text-[#1E4C9A] inline-block">VIDA DO TRANSPORTADOR</span>
+                <span className="inline-block">EM CADA JORNADA.</span>
               </h1>
               <p className="text-gray-600 text-lg max-w-xl">
                 Tudo o que você precisa em um só lugar: desde cálculo de frete e assessoria jurídica até reboques e parcerias que garantam mais eficiência e segurança.
