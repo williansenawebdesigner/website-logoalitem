@@ -159,7 +159,7 @@ export default function Home() {
               animation="slideFromRight"
             >
               <Image 
-                src="/images/services/img-antt.png"
+                src="/images/services/mockup-calculo-frete.png"
                 alt="Serviços ANTT"
                 width={800}
                 height={600}
