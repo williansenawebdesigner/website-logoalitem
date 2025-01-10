@@ -89,6 +89,21 @@ export default function Contato() {
                   </div>
                 </div>
                 <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Serviço de Interesse</label>
+                  <select
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#1E4C9A] focus:border-transparent transition bg-white"
+                  >
+                    <option value="">Selecione um serviço</option>
+                    <option value="Cadastro ANTT">Cadastro ANTT</option>
+                    <option value="Renovação ANTT">Renovação ANTT</option>
+                    <option value="Inclusão de Veículos">Inclusão de Veículos</option>
+                    <option value="Alteração Cadastral">Alteração Cadastral</option>
+                    <option value="Assessoria Jurídica">Assessoria Jurídica</option>
+                    <option value="Serviços de Munck">Serviços de Munck</option>
+                    <option value="Serviços de Reboque">Serviços de Reboque</option>
+                  </select>
+                </div>
+                <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Assunto</label>
                   <input
                     type="text"
@@ -240,4 +255,4 @@ export default function Contato() {
       />
     </main>
   )
-} 
+}
