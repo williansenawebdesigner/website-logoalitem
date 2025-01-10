@@ -130,7 +130,7 @@ export default function Antt() {
                     src={servico.imagem}
                     alt={servico.titulo}
                     fill
-                    className="object-cover"
+                    className="object-cover grayscale hover:grayscale-0 transition-all duration-300"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                   <div className={`absolute top-4 left-4 ${servico.cor} text-white px-4 py-1 rounded-full text-sm font-medium`}>
@@ -195,4 +195,4 @@ export default function Antt() {
       />
     </main>
   )
-} 
+}
