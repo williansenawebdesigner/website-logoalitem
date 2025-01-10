@@ -47,6 +47,12 @@ export default function Header() {
             Calculo de Frete
           </Link>
           <Link 
+            href="/#antt" 
+            className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
+          >
+            Serviços ANTT
+          </Link>
+          <Link 
             href="/#sobre" 
             className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
           >

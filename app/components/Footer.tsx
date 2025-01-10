@@ -77,6 +77,11 @@ export default function Footer() {
                   Assessoria Jurídica
                 </Link>
               </li>
+              <li>
+                <Link href="/servicos/antt" className="text-gray-400 hover:text-white transition">
+                  Serviços (ANTT)
+                </Link>
+              </li>
             </ul>
           </div>
 
