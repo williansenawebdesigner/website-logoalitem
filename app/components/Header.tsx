@@ -21,36 +21,26 @@ export default function Header() {
           </Link>
         </div>
         <nav className="hidden md:flex gap-6">
-          <Link href="/" className="text-gray-700 hover:text-[#1E4C9A] transition">Início</Link>
+          <Link href="/" className="text-gray-700 hover:text-[#1E4C9A] transition">
+            Início
+          </Link>
           <Link
-            href="/#servicos"
+            href="https://www.logoalitem.com.br/calcula-estadia/"
             className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
           >
-            Reboques
+            Calculo de estadia
           </Link>
           <Link 
-            href="/#munck" 
+            href="/#servicos" 
             className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
           >
-            Munck
+            Serviços
           </Link>
           <Link 
-            href="/#acessoria" 
+            href="/servicos/antt" 
             className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
           >
-            Assessoria Jurídica
-          </Link>
-          <Link 
-            href="/#calculo" 
-            className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
-          >
-            Calculo de Frete
-          </Link>
-          <Link 
-            href="/#antt" 
-            className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
-          >
-            Serviços ANTT
+            ANTT
           </Link>
           <Link 
             href="/#sobre" 
@@ -58,7 +48,9 @@ export default function Header() {
           >
             Sobre nós
           </Link>
-          <Link href="/contato" className="text-gray-700 hover:text-[#1E4C9A] transition">Contato</Link>
+          <Link href="/contato" className="text-gray-700 hover:text-[#1E4C9A] transition">
+            Contato
+          </Link>
         </nav>
         <AnimatedButton 
           href="https://www.logoalitem.com.br/user/login" 

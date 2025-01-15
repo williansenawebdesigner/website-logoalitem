@@ -69,7 +69,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/servicos/calculo-frete" className="text-gray-400 hover:text-white transition">
-                  Cálculo de Frete
+                  Cálculo de Estadia
                 </Link>
               </li>
               <li>

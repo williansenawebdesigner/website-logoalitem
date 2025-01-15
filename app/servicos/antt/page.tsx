@@ -91,7 +91,7 @@ export default function Antt() {
               animation="slideFromRight"
             >
               <Image 
-                src="/images/services/img-antt.png"
+                src="/images/services/img-antt.webp"
                 alt="Serviços ANTT"
                 width={750}
                 height={500}

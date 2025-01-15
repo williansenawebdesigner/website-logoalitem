@@ -229,7 +229,7 @@ export default function Home() {
               animation="slideFromRight"
             >
               <Image 
-                src="/images/services/img-antt.png"
+                src="/images/services/img-antt.webp"
                 alt="Serviços ANTT"
                 width={800}
                 height={600}
