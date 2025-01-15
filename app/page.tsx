@@ -126,7 +126,7 @@ export default function Home() {
                     <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Cálculo de frete por km rodado</span>
+                    <span>Cálculo de estadia</span>
                   </li>
                   <li className="flex items-center gap-3 text-gray-600">
                     <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -138,13 +138,7 @@ export default function Home() {
                     <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Custos operacionais</span>
-                  </li>
-                  <li className="flex items-center gap-3 text-gray-600">
-                    <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Relatórios detalhados</span>
+                    <span>Valor da hora</span>
                   </li>
                 </ul>
                 <div className="mt-8">

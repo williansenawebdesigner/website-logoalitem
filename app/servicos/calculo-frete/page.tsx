@@ -61,7 +61,7 @@ export default function CalculoFrete() {
                 <span className="text-[#1E4C9A]">Cálculo de Frete</span>
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-                Calcule seu Frete e
+                Calcule sua
                 <span className="text-[#1E4C9A] block">Estadia</span>
               </h1>
               <p className="text-gray-600 text-lg">
