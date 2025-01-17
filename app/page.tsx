@@ -23,7 +23,7 @@ export default function Home() {
                 <span className="inline-block">EM CADA JORNADA.</span>
               </h1>
               <p className="text-gray-600 text-lg max-w-xl">
-                Tudo o que você precisa em um só lugar: desde cálculo de frete e assessoria jurídica até reboques e parcerias que garantam mais eficiência e segurança.
+                Tudo o que você precisa em um só lugar: desde cálculo de estadia e assessoria jurídica até reboques e parcerias que garantam mais eficiência e segurança.
               </p>
               <div className="flex items-center gap-8 pt-4">
                 <AnimatedButton href="#servicos" variant="primary">
@@ -107,10 +107,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <AnimatedSection animation="fadeInUp">
             <h2 className="text-4xl lg:text-4xl font-bold mb-4 text-gray-800 text-center">
-              Cálculo de Estadia e Frete
+              Cálculo de Estadia
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto text-lg text-center mb-16">
-              Ferramenta gratuita para calcular valores de frete e estadia de acordo com a legislação vigente. Tenha controle total dos seus custos e garanta uma remuneração justa.
+              Ferramenta gratuita para calcular valores de estadia de acordo com a legislação vigente. Tenha controle total dos seus custos e garanta uma remuneração justa.
             </p>
           </AnimatedSection>
           

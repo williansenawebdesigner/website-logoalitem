@@ -1,9 +1,10 @@
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-export default function CalculoFrete() {
+export default function CalculoDeEstadia() {
   const beneficios = [
     {
       icon: (
@@ -58,18 +59,18 @@ export default function CalculoFrete() {
                 <span>/</span>
                 <Link href="#" className="hover:text-[#1E4C9A]">Serviços</Link>
                 <span>/</span>
-                <span className="text-[#1E4C9A]">Cálculo de Frete</span>
+                <span className="text-[#1E4C9A]">Cálculo de Estadia</span>
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
                 Calcule sua
                 <span className="text-[#1E4C9A] block">Estadia</span>
               </h1>
               <p className="text-gray-600 text-lg">
-                Ferramenta gratuita para calcular valores de frete e estadia de acordo com a legislação vigente. Tenha controle total dos seus custos e garanta uma remuneração justa.
+                Ferramenta gratuita para calcular valores de estadia de acordo com a legislação vigente. Tenha controle total dos seus custos e garanta uma remuneração justa.
               </p>
               <Link 
                 href="/sistema" 
-                className="bg-[#1E4C9A] text-white px-8 py-4 rounded-full flex items-center gap-2 shadow-lg hover:shadow-xl transition duration-300 text-lg w-fit"
+                className="bg-[#1E4C9A] text-white px-8 py-4 rounded-full flex items-center gap-2 shadow-lg hover:text-[#ffffff] hover:shadow-xl transition duration-300 text-lg w-fit"
               >
                 Acessar Sistema
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -108,7 +109,8 @@ export default function CalculoFrete() {
         </div>
       </section>
 
-      {/* Recursos */}
+      {/* Recursos */} 
+      {/*
       <section className="py-16 bg-[#1E4C9A] text-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -144,7 +146,7 @@ export default function CalculoFrete() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF]">

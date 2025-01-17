@@ -68,7 +68,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/servicos/calculo-frete" className="text-gray-400 hover:text-white transition">
+                <Link href="/servicos/calculo-de-estadia" className="text-gray-400 hover:text-white transition">
                   Cálculo de Estadia
                 </Link>
               </li>
