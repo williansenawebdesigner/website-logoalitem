@@ -109,8 +109,7 @@ export default function CalculoDeEstadia() {
         </div>
       </section>
 
-      {/* Recursos */} 
-      {/*
+      {/* Recursos */}
       <section className="py-16 bg-[#1E4C9A] text-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -146,7 +145,7 @@ export default function CalculoDeEstadia() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF]">
