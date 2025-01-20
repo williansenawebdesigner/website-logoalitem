@@ -57,7 +57,8 @@ export default function Contato() {
       } else {
         throw new Error(data.error || 'Erro ao enviar mensagem');
       }
-    } catch (error) {
+    } catch (err) {
+      console.error('Erro ao enviar formulário:', err);
       setStatus({
         type: 'error',
         message: 'Erro ao enviar mensagem. Por favor, tente novamente.'
