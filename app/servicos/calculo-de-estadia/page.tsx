@@ -35,15 +35,6 @@ export default function CalculoDeEstadia() {
     }
   ]
 
-  const recursos = [
-    "Cálculo de frete por km rodado",
-    "Estadia conforme legislação",
-    "Custos operacionais",
-    "Pedágios e taxas",
-    "Relatórios detalhados",
-    "Histórico de cálculos"
-  ]
-
   return (
     <main className="min-h-screen bg-white">
       <Header />
@@ -108,44 +99,6 @@ export default function CalculoDeEstadia() {
           </div>
         </div>
       </section>
-
-      {/* Recursos
-      <section className="py-16 bg-[#1E4C9A] text-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2 space-y-6">
-              <h2 className="text-3xl font-bold text-white">Recursos da Ferramenta</h2>
-              <p className="text-white/60 text-lg">
-                Nossa calculadora oferece todos os recursos necessários para você ter o controle total dos seus custos e garantir uma remuneração justa pelo seu trabalho.
-              </p>
-              <ul className="space-y-4">
-                {recursos.map((recurso, index) => (
-                  <li key={index} className="flex items-center gap-3">
-                    <svg className="w-6 h-6 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>{recurso}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="lg:w-1/2 bg-white p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Legislação</h3>
-              <div className="space-y-4 text-gray-600">
-                <p>
-                  A Lei 13.103/2015 (Lei do Motorista) estabelece critérios para o cálculo do tempo de estadia, que deve ser considerado após 5 horas de espera nos casos de carga e descarga.
-                </p>
-                <p>
-                  O valor da estadia é calculado com base no custo operacional do veículo, despesas com o motorista e lucro cessante pelo período em que o veículo ficar parado.
-                </p>
-                <p>
-                  Nossa ferramenta considera todos esses aspectos para garantir que você receba o valor justo pelo seu trabalho.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-[#EEF5FF] to-[#F5F9FF]">

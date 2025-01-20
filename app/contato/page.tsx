@@ -5,8 +5,68 @@ import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import WhatsAppButton from '../components/WhatsAppButton'
+import { useState } from 'react'
 
 export default function Contato() {
+  const [formData, setFormData] = useState({
+    nome: '',
+    email: '',
+    servico: '',
+    assunto: '',
+    mensagem: ''
+  });
+  const [status, setStatus] = useState({ type: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: '', message: '' });
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setStatus({
+          type: 'success',
+          message: 'Mensagem enviada com sucesso! Entraremos em contato em breve.'
+        });
+        setFormData({
+          nome: '',
+          email: '',
+          servico: '',
+          assunto: '',
+          mensagem: ''
+        });
+      } else {
+        throw new Error(data.error || 'Erro ao enviar mensagem');
+      }
+    } catch (error) {
+      setStatus({
+        type: 'error',
+        message: 'Erro ao enviar mensagem. Por favor, tente novamente.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const depoimentos = [
     {
       nome: "João Silva",
@@ -69,29 +129,41 @@ export default function Contato() {
             {/* Formulário */}
             <div className="lg:w-2/3 bg-white rounded-2xl shadow-xl p-6 md:p-8">
               <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center md:text-left">Envie sua mensagem</h2>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Nome</label>
                     <input
                       type="text"
+                      name="nome"
+                      value={formData.nome}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#1E4C9A] focus:border-transparent transition"
                       placeholder="Seu nome completo"
+                      required
                     />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                     <input
                       type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#1E4C9A] focus:border-transparent transition"
                       placeholder="seu@email.com"
+                      required
                     />
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Serviço de Interesse</label>
                   <select
+                    name="servico"
+                    value={formData.servico}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#1E4C9A] focus:border-transparent transition bg-white"
+                    required
                   >
                     <option value="">Selecione um serviço</option>
                     <option value="Cadastro ANTT">Cadastro ANTT</option>
@@ -107,23 +179,37 @@ export default function Contato() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Assunto</label>
                   <input
                     type="text"
+                    name="assunto"
+                    value={formData.assunto}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#1E4C9A] focus:border-transparent transition"
                     placeholder="Como podemos ajudar?"
+                    required
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Mensagem</label>
                   <textarea
+                    name="mensagem"
+                    value={formData.mensagem}
+                    onChange={handleChange}
                     rows={6}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#1E4C9A] focus:border-transparent transition"
                     placeholder="Descreva sua necessidade em detalhes"
+                    required
                   ></textarea>
                 </div>
+                {status.message && (
+                  <div className={`p-4 rounded-lg ${status.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
+                    {status.message}
+                  </div>
+                )}
                 <button
                   type="submit"
-                  className="w-full bg-[#1E4C9A] text-white py-4 rounded-lg hover:bg-[#1a4185] transition duration-300 font-medium"
+                  disabled={isSubmitting}
+                  className="w-full bg-[#1E4C9A] text-white py-4 rounded-lg hover:bg-[#1a4185] transition duration-300 font-medium disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  Enviar Mensagem
+                  {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
                 </button>
               </form>
             </div>
