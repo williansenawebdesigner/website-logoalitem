@@ -78,7 +78,7 @@ export default function Contato() {
     {
       nome: "Maria Santos",
       cargo: "Gestora de Frota",
-      texto: "Desde que começamos a usar os serviços de cálculo de frete, nossa operação ficou muito mais eficiente e lucrativa.",
+      texto: "Desde que começamos a usar os serviços de cálculo de estadia, nossa operação ficou muito mais eficiente e lucrativa.",
       imagem: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&h=100&fit=crop"
     }
   ]
