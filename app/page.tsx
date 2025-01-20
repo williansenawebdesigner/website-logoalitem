@@ -20,7 +20,7 @@ export default function Home() {
             >
               <h1 className="text-[2.4rem] lg:text-[2.8rem] font-bold text-gray-800 leading-tight">
                 <span className="inline-block">SIMPLIFICANDO A</span> <span className="text-[#1E4C9A] inline-block">VIDA DO TRANSPORTADOR</span>
-                <span className="inline-block">EM CADA JORNADA.</span>
+                <span className="inline-block">EM CADA JORNADA</span>
               </h1>
               <p className="text-gray-600 text-lg max-w-xl">
                 Tudo o que você precisa em um só lugar: desde cálculo de estadia e assessoria jurídica até reboques e parcerias que garantam mais eficiência e segurança.
@@ -166,76 +166,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Serviços ANTT */}
-      <section id="antt" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <AnimatedSection animation="fadeInUp">
-            <h2 className="text-4xl lg:text-4xl font-bold mb-4 text-gray-800 text-center">
-              Serviços ANTT
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg text-center mb-16">
-              Regularização completa para seu transporte, incluindo cadastro, renovação e alterações cadastrais na ANTT.
-            </p>
-          </AnimatedSection>
-          
-          <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
-            <AnimatedSection 
-              className="lg:w-1/2 space-y-6"
-              animation="slideFromLeft"
-            >
-              <div className="bg-[#EEF5FF] p-8 rounded-2xl shadow-lg">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Nossos Serviços ANTT</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-center gap-3 text-gray-600">
-                    <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Cadastro inicial na ANTT</span>
-                  </li>
-                  <li className="flex items-center gap-3 text-gray-600">
-                    <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Renovação anual de cadastro</span>
-                  </li>
-                  <li className="flex items-center gap-3 text-gray-600">
-                    <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Inclusão de veículos</span>
-                  </li>
-                  <li className="flex items-center gap-3 text-gray-600">
-                    <svg className="w-6 h-6 text-[#1E4C9A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Alterações cadastrais</span>
-                  </li>
-                </ul>
-                <div className="mt-8">
-                  <AnimatedButton href="/servicos/antt" variant="primary">
-                    Saiba mais
-                  </AnimatedButton>
-                </div>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection 
-              className="lg:w-1/2 relative w-full min-h-[300px] lg:min-h-[400px]"
-              animation="slideFromRight"
-            >
-              <Image 
-                src="/images/services/img-antt.webp"
-                alt="Serviços ANTT"
-                width={800}
-                height={600}
-                className="object-contain rounded-2xl"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
-              />
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
       {/* Nossos serviços */}
       <section id="servicos" className="bg-[#1E4C9A] text-white py-20">
         <div className="container mx-auto px-4">
@@ -266,7 +196,7 @@ export default function Home() {
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Reboque 24h</h3>
                 <p className="text-white/70 text-lg">
                 Atendimento ágil e eficiente para emergências na estrada, garantindo que você e seu veículo estejam sempre protegidos, não importa a situação.                </p>
-                <AnimatedButton href="/contato" variant="secondary">
+                <AnimatedButton href="https://wa.me/5531992049301?text=Olá! Preciso de um reboque. Podem me ajudar?" variant="secondary">
                   Solicitar reboque
                 </AnimatedButton>
               </AnimatedSection>
@@ -297,7 +227,7 @@ export default function Home() {
                 <p className="text-white/70 text-lg">
                 Serviço especializado no transporte e movimentação de cargas pesadas e equipamentos, atendendo às necessidades de quem lida com materiais de grande porte. 
                 </p>
-                <AnimatedButton href="/contato" variant="secondary">
+                <AnimatedButton href="https://wa.me/5531992049301?text=Olá! Gostaria de saber mais sobre o aluguel do caminhão munk." variant="secondary">
                   Solicitar munck
                 </AnimatedButton>
               </AnimatedSection>
@@ -327,7 +257,7 @@ export default function Home() {
                 <h3 id="acessoria" className="text-2xl lg:text-3xl font-bold text-gray-100">Assessoria Jurídica</h3>
                 <p className="text-white/70 text-lg">
                 Juridica: Suporte jurídico completo para motoristas, garantindo segurança e orientação em questões relacionadas ao transporte e aos seus direitos.                </p>
-                <AnimatedButton href="/contato" variant="secondary">
+                <AnimatedButton href="https://wa.me/5531992049301?text=Olá! Gostaria de uma consulta com a assessoria jurídica." variant="secondary">
                   Consultar assessoria
                 </AnimatedButton>
               </AnimatedSection>
