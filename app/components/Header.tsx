@@ -41,7 +41,7 @@ export default function Header() {
               Início
             </Link>
             <Link
-              href="https://www.logoalitem.com.br/calcula-estadia/"
+              href="#calculo"
               className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
             >
               Calculo de estadia
