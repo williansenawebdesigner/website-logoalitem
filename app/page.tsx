@@ -142,7 +142,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className="mt-8">
-                  <AnimatedButton href="https://www.logoalitem.com.br/calcula-estadia/" variant="primary">
+                  <AnimatedButton href="https://app.logoalitem.com.br/calcula-estadia/" variant="primary">
                     Calcular agora
                   </AnimatedButton>
                 </div>

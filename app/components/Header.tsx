@@ -72,7 +72,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             {/* Botão de Login */}
             <AnimatedButton 
-              href="https://www.logoalitem.com.br/user/login" 
+              href="https://app.logoalitem.com.br/user/login" 
               variant="primary"
               className="text-sm py-2.5 px-6"
               showArrow={false}
