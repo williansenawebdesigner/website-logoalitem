@@ -73,7 +73,7 @@ export default function Home() {
               animation="slideFromRight"
             >
               <Image 
-                src="/images/hero/img-hero.png"
+                src="/images/hero/img-hero.webp"
                 alt="Transporte de Carga"
                 width={750}
                 height={500}
