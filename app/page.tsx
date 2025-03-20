@@ -196,7 +196,7 @@ export default function Home() {
                 <h3 className="text-2xl lg:text-3xl font-bold text-gray-100">Reboque 24h</h3>
                 <p className="text-white/70 text-lg">
                 Atendimento ágil e eficiente para emergências na estrada, garantindo que você e seu veículo estejam sempre protegidos, não importa a situação.                </p>
-                <AnimatedButton href="https://wa.me/5531992049301?text=Olá! Preciso de um reboque. Podem me ajudar?" variant="secondary">
+                <AnimatedButton href="https://app.logoalitem.com.br/reboque" variant="secondary">
                   Solicitar reboque
                 </AnimatedButton>
               </AnimatedSection>
