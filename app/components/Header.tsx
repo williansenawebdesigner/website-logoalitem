@@ -50,6 +50,12 @@ export default function Header() {
               href="/#servicos" 
               className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
             >
+              Calculo de reboque
+            </Link>
+            <Link 
+              href="/#servicos" 
+              className="text-gray-600 hover:text-[#1E4C9A] transition duration-300"
+            >
               Serviços
             </Link>
             <Link 
@@ -148,11 +154,18 @@ export default function Header() {
               Início
             </Link>
             <Link
-              href="https://www.logoalitem.com.br/calcula-estadia/"
+              href="https://app.logoalitem.com.br/calcula-estadia"
               className="text-gray-600 hover:text-[#1E4C9A] transition py-2 border-b border-gray-100"
               onClick={() => setIsMenuOpen(false)}
             >
               Calculo de estadia
+            </Link>
+            <Link
+              href="https://app.logoalitem.com.br/reboque"
+              className="text-gray-600 hover:text-[#1E4C9A] transition py-2 border-b border-gray-100"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Calculo de reboque
             </Link>
             <Link
               href="/#servicos"

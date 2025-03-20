@@ -106,15 +106,14 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <div>
-                  Rodovia Presidente Juscelino Kubitschek<br />
-                  Esmeraldas - MG<br />
-                  35740-000
+                   BR-040, km 503<br />
+                   Esmeraldas - MG, 35740-000<br />
+                  <strong>Ponto de referência:</strong> 800m antes do Posto Beija Flor
                 </div>
               </li>
             </ul>
           </div>
         </div>
-
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; {year} Logo Ali Tem. Todos os direitos reservados.</p>
         </div>
